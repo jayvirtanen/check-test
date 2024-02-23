@@ -9,6 +9,7 @@ pipeline {
     stages {
         stage('First Stage') {
             steps {
+                sleep 10
                 sh 'hostname'
             }
         }
