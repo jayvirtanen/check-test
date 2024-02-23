@@ -7,8 +7,18 @@ pipeline {
         }
     }
     stages {
-        stage('Main') {
+        stage('First Stage') {
             steps {
+                sh 'hostname'
+            }
+        }
+        stage('Second Stage'){
+            steps{
+                sh 'hostname'
+            }
+        }
+        stage('Third Stage'){
+            steps{
                 sh 'hostname'
             }
         }
